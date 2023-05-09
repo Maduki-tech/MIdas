@@ -1,9 +1,11 @@
 import React from 'react';
 import { CTAButton, CallToAction } from './CallToAction';
+import Boost from '~/../public/boost.jpg';
+import Image from 'next/image';
 
 export default function Sec4() {
     return (
-        <div className=" even mt-8 flex flex-col items-center gap-20">
+        <div className=" even flex flex-col items-center gap-20">
             <h2 className="w-2/3 text-center text-xl xl:text-3xl font-bold">
                 <span className="text-cText">Booste dein Unternehmen:</span>{' '}
                 Kostenlos Beratungsgespräch für dein{' '}
@@ -20,7 +22,10 @@ export default function Sec4() {
                     innerhalb von 24 Stunden mit dir in Verbindung setzen.
                 </div>
 
-                <div className="hidden xl:block h-full w-1/2 bg-cBlue"></div>
+                <div className="hidden xl:block h-fit w-1/2 rounded-lg overflow-hidden shadow shadow-cBlack">
+                <Image src={Boost} alt='boost'/>
+                </div>
+
             </div>
 
             <div className="flex flex-col items-center">

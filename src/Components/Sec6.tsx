@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Sec6() {
     return (
-        <div className=" even mt-8 flex flex-col items-center gap-20">
+        <div className=" even  flex flex-col items-center gap-20">
             <h2 className="col-span-2 text-center text-xl xl:text-3xl font-bold text-cRed">
                 Über Midas Media
             </h2>

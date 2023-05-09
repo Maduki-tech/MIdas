@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Sec5() {
     return (
-        <div className=" odd mt-8 flex flex-col items-center gap-20">
+        <div className=" odd  flex flex-col items-center gap-20">
             <h1 className=" text-center text-xl text-cText xl:text-3xl">
                 Deshalb kommst du um Social Recruiting nicht herum!
             </h1>

@@ -4,19 +4,41 @@ import { CallToAction, CTAButton } from './CallToAction';
 import Image from 'next/image';
 import stock1 from '~/../public/stock1.jpg';
 import logo from '~/../public/Logo.png';
+import { motion } from 'framer-motion';
 
 export default function Sec1() {
     return (
-        <div className=" first flex xl:h-screen flex-col items-center gap-4 pb-4">
+        <div className=" first flex flex-col items-center gap-4 pb-4 xl:h-screen">
             {/* TODO: Logo */}
-            <Image src={logo} alt="Midas Media Logo" width={150} className=" pt-4" />
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+            >
+                <Image
+                    src={logo}
+                    alt="Midas Media Logo"
+                    width={150}
+                    className=" pt-4"
+                />
+            </motion.div>
 
-            <h2 className="w-1/2 text-center text-xl xl:text-3xl font-bold">
+            <motion.h2
+                initial={{ opacity: 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+                animate={{ opacity: 1 }}
+                className="w-1/2 text-center text-xl font-bold xl:text-3xl"
+            >
                 Willst du endlich deinen gewünschten{' '}
                 <span className="text-cText">Mitarbeiter </span> finden?
-            </h2>
-            <div className="my-2 border-t-2 border-dashed border-cRed ">
-                <h4 className="my-4 text-center px-8 xl:text-xl">
+            </motion.h2>
+            <motion.div
+                initial={{ opacity: 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+                animate={{ opacity: 1 }}
+                className="my-2 border-t-2 border-dashed border-cRed "
+            >
+                <h4 className="my-4 px-8 text-center xl:text-xl">
                     Finde noch heute mit{' '}
                     <Link
                         href="https://midasmedia.de/"
@@ -27,9 +49,14 @@ export default function Sec1() {
                     gewünschten Mitarbeiter
                 </h4>
                 <div className="my-2 border-t-2 border-dashed border-cRed"></div>
-            </div>
+            </motion.div>
 
-            <div className="grid xl:grid-cols-2 xl:grid-rows-2 justify-items-center px-8 gap-4">
+            <motion.div
+                initial={{ opacity: 0 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+                animate={{ opacity: 1 }}
+                className="grid justify-items-center gap-4 px-8 xl:grid-cols-2 xl:grid-rows-2"
+            >
                 <div className="relative overflow-hidden rounded-xl shadow-lg shadow-cBlack ">
                     <Image
                         src={stock1}
@@ -40,22 +67,22 @@ export default function Sec1() {
                     <div className="absolute left-0 top-0 h-full w-full bg-black opacity-20"></div>
                 </div>
 
-                <div className="relative row-span-2 h-fit xl:w-full  rounded-xl border-2 border-cBlue p-8 ">
+                <div className="relative row-span-2 h-fit rounded-xl  border-2 border-cBlue p-8 xl:w-full ">
                     <div className="absolute inset-0 backdrop-blur-sm backdrop-filter"></div>
                     <div className="relative z-10 flex flex-col gap-4">
-                    <div>
-                        <p className="text-cText">
-                            Für wen ist Social Recruiting geeignet?
-                        </p><br/>
-                        <span className="text-cText">Achtung: </span>Social
-                        Recruiting eignet sich für jede Unternehmensgröße und
-                        jeder Branche, die nach neuen Mitarbeitern suchen und
-                        ihre Rekrutierungsstrategien verbessern möchten. Es
-                        spricht potenzielle Kandidaten an, die nicht aktiv nach
-                        einem neuen Job suchen, aber dennoch offen für neue
-                        Möglichkeiten sind.
-
-                    </div>
+                        <div>
+                            <p className="text-cText">
+                                Für wen ist Social Recruiting geeignet?
+                            </p>
+                            <br />
+                            <span className="text-cText">Achtung: </span>Social
+                            Recruiting eignet sich für jede Unternehmensgröße
+                            und jeder Branche, die nach neuen Mitarbeitern
+                            suchen und ihre Rekrutierungsstrategien verbessern
+                            möchten. Es spricht potenzielle Kandidaten an, die
+                            nicht aktiv nach einem neuen Job suchen, aber
+                            dennoch offen für neue Möglichkeiten sind.
+                        </div>
                         <div className="flex flex-col items-center text-center">
                             <CallToAction />
                             <CTAButton lineclass="" />
@@ -70,7 +97,7 @@ export default function Sec1() {
                         <li>Du wirst zum Platzhirsch deiner Branche</li>
                     </ul>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

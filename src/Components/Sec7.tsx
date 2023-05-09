@@ -69,7 +69,12 @@ function QaA({ question, answer }: QProps) {
     };
 
     return (
-        <div className="">
+        <motion.div
+
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeInOut"}}
+        className="">
             <LayoutGroup>
                 {isExpanded ? (
                     <>
@@ -92,7 +97,7 @@ function QaA({ question, answer }: QProps) {
                     </CompactCard>
                 )}
             </LayoutGroup>
-        </div>
+        </motion.div>
     );
 }
 

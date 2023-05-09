@@ -222,7 +222,7 @@ const FormComponent = () => {
                     <button
                         type="submit"
                         disabled={state.submitting}
-                        className="w-full rounded bg-gradient-to-r from-cRed to-cBlue py-3 text-xl text-white"
+                        className="w-full rounded bg-gradient-to-r from-cRed to-cBlue text-lg py-3 xl:text-xl text-white"
                     >
                         Unverbindliches Beratungsgespräch (Jetzt Anfordern)
                     </button>
