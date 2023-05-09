@@ -13,6 +13,7 @@ import HandleLine from '~/Components/handleLine';
 import Sec1 from '~/Components/sec1';
 import Formular from '~/Components/Formular';
 import Footer from '~/Components/Footer';
+import { useEffect, useState } from 'react';
 
 const Home: NextPage = () => {
     const { scrollYProgress } = useScroll();
@@ -39,13 +40,27 @@ const Home: NextPage = () => {
                 <Sec8 />
                 <Sec9 />
                 <Formular />
-                {typeof window !== 'undefined' && window.innerWidth > 1024 && (
-                    <HandleLine />
-                )}
             </main>
             <Footer />
+            <ConditionalHandleLine />
         </div>
     );
 };
+
+// Render the HandleLine component only on the client-side, based on the window size.
+function ConditionalHandleLine() {
+    const [shouldRender, setShouldRender] = useState(false);
+
+    useEffect(() => {
+        setShouldRender(true);
+    }, []);
+
+    if (typeof window === 'undefined' || !shouldRender || window.innerWidth <= 1024) {
+        return null;
+    }
+
+    return <HandleLine />;
+}
+
 
 export default Home;

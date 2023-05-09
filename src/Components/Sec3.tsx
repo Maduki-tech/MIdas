@@ -27,8 +27,8 @@ export default function Sec3() {
             <div className="flex flex-col items-center">
                 <CallToAction />
                 <CTAButton lineclass="G" />
-                <div className="H absolute right-10 h-24 w-2 bg-transparent"></div>
-                <div className="I absolute left-10 h-24 w-2 bg-transparent"></div>
+                <div className="mt-8 H absolute right-10 h-24 w-2 bg-transparent"></div>
+                <div className="mt-8 I absolute left-10 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );

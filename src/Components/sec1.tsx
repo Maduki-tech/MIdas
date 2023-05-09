@@ -9,7 +9,7 @@ export default function Sec1() {
     return (
         <div className=" first flex xl:h-screen flex-col items-center gap-4 pb-4">
             {/* TODO: Logo */}
-            <Image src={logo} alt="Midas Media Logo" width={150} className="" />
+            <Image src={logo} alt="Midas Media Logo" width={150} className=" pt-4" />
 
             <h2 className="w-1/2 text-center text-xl xl:text-3xl font-bold">
                 Willst du endlich deinen gewünschten{' '}

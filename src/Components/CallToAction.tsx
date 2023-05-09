@@ -17,7 +17,7 @@ export function CallToAction() {
 
 export const CTAButton = ({ lineclass }: CallToActionProps) => {
     return (
-        <div className="relative inline-block w-fit">
+        <div className="relative inline-block w-fit mt-8">
             <div className="pulse absolute inset-0 rounded-full bg-gradient-to-r from-cRed to-cBlue"></div>
             <button
                 className={`relative w-fit rounded-full px-5 py-3 bg-gradient-to-r from-cRed to-cBlue text-xl text-white ${lineclass} z-10`}

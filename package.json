@@ -9,8 +9,10 @@
         "start": "next start"
     },
     "dependencies": {
+        "@formspree/react": "^2.4.1",
         "@t3-oss/env-nextjs": "^0.2.1",
         "@types/react-ga": "^2.3.0",
+        "@types/react-toastify": "^4.1.0",
         "framer-motion": "^10.12.7",
         "next": "^13.2.4",
         "next-videos": "^1.4.1",
@@ -18,6 +20,7 @@
         "react-dom": "18.2.0",
         "react-ga": "^3.3.1",
         "react-lineto": "^3.3.0",
+        "react-toastify": "^9.1.2",
         "tailwindcss-neumorphism": "^0.1.0",
         "zod": "^3.21.4"
     },

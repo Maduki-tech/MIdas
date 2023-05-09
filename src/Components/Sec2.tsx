@@ -50,8 +50,8 @@ export default function Sec2() {
             <div className="flex flex-col items-center">
                 <CallToAction />
                 <CTAButton lineclass="E" />
-                <div className="D absolute left-8 h-24 w-2 bg-transparent"></div>
-                <div className="F absolute right-8 h-24 w-2 bg-transparent"></div>
+                <div className="D mt-8 absolute left-8 h-24 w-2 bg-transparent"></div>
+                <div className="F mt-8 absolute right-8 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );

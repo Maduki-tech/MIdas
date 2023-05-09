@@ -9,7 +9,7 @@ import Image from 'next/image';
 export default function Sec5() {
     return (
         <div className=" odd mt-8 flex flex-col items-center gap-20">
-            <h1 className=" text-xl xl:text-3xl text-center text-cText">
+            <h1 className=" text-center text-xl text-cText xl:text-3xl">
                 Deshalb kommst du um Social Recruiting nicht herum!
             </h1>
             <Kachel
@@ -31,8 +31,8 @@ export default function Sec5() {
             <div className="flex flex-col items-center">
                 <CallToAction />
                 <CTAButton lineclass="N" />
-                <div className="M absolute right-10 h-24 w-2 bg-transparent"></div>
-                <div className="O absolute left-10 h-24 w-2 bg-transparent"></div>
+                <div className="M absolute right-10 mt-8 h-24 w-2 bg-transparent"></div>
+                <div className="O absolute left-10 mt-8 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );
@@ -51,12 +51,14 @@ function Kachel({ image, title, text }: KachelProps) {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-            className="flex px-8 xl:w-1/3 flex-col items-center gap-4"
+            className="flex flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow shadow-white hover:shadow-lg hover:shadow-white xl:w-1/3"
         >
             <div className="m-4 h-44 w-44 ">
                 <Image src={image} alt="Logo" />
             </div>
-            <h1 className="text-2xl text-center font-bold text-cText">{title}</h1>
+            <h1 className="text-center text-2xl font-bold text-cText">
+                {title}
+            </h1>
             <p className="text-center">{text}</p>
         </motion.div>
     );

@@ -5,7 +5,7 @@ import x from '~/../public/x.png';
 export default function Sec9() {
     return (
         <div className=" odd mt-8 flex flex-col items-center gap-8">
-            <div className="Y absolute right-10 h-10 w-2 bg-transparent"></div>
+            <div className="Y absolute right-10 h-12 w-2 bg-transparent"></div>
             <div className="flex gap-4 items-center">
                 <h1 className=" text-center text-3xl font-bold text-cRed">
                     Fazit

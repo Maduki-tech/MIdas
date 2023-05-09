@@ -10,7 +10,7 @@ export default function Sec8() {
                 Limitiertes Angebot
             </h1>
             <div className="grid xl:grid-cols-2 place-items-center">
-                <p className="px-8 xlw-1/2 text-center xl:text-left">
+                <p className="px-8 xl:w-3/4  text-center xl:text-left">
                     Wir haben eine aufregende Neuigkeit für dich! Wir haben ein
                     limitiertes Angebot, das nur für kurze Zeit verfügbar ist.
                     Aber zuerst möchten wir betonen, dass wir nicht mit jedem
@@ -37,8 +37,8 @@ export default function Sec8() {
             <div className="flex flex-col items-center">
                 <CallToAction />
                 <CTAButton lineclass="W" />
-                <div className="X absolute right-10 h-24 w-2 bg-transparent"></div>
-                <div className="V absolute left-10 h-24 w-2 bg-transparent"></div>
+                <div className="mt-8 X absolute right-10 h-24 w-2 bg-transparent"></div>
+                <div className="mt-8 V absolute left-10 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );

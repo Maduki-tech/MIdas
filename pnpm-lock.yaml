@@ -1,12 +1,18 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@formspree/react':
+    specifier: ^2.4.1
+    version: 2.4.1(react-dom@18.2.0)(react@18.2.0)
   '@t3-oss/env-nextjs':
     specifier: ^0.2.1
     version: 0.2.1(zod@3.21.4)
   '@types/react-ga':
     specifier: ^2.3.0
     version: 2.3.0(prop-types@15.8.1)(react@18.2.0)
+  '@types/react-toastify':
+    specifier: ^4.1.0
+    version: 4.1.0(react-dom@18.2.0)(react@18.2.0)
   framer-motion:
     specifier: ^10.12.7
     version: 10.12.7(react-dom@18.2.0)(react@18.2.0)
@@ -28,6 +34,9 @@ dependencies:
   react-lineto:
     specifier: ^3.3.0
     version: 3.3.0
+  react-toastify:
+    specifier: ^9.1.2
+    version: 9.1.2(react-dom@18.2.0)(react@18.2.0)
   tailwindcss-neumorphism:
     specifier: ^0.1.0
     version: 0.1.0
@@ -140,6 +149,16 @@ packages:
     resolution: {integrity: sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@formspree/react@2.4.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ZP3oZ7HIMf6KK2sbz4H5XLNXjXBJotI9nveSiTX68Uc1eGzWjBKQqp2qAFlOSjmvgoYMkjJ7NtVD14s49ZrBow==}
+    dependencies:
+      '@stripe/react-stripe-js': 1.16.5(@stripe/stripe-js@1.52.1)(react-dom@18.2.0)(react@18.2.0)
+      '@stripe/stripe-js': 1.52.1
+    transitivePeerDependencies:
+      - react
+      - react-dom
+    dev: false
 
   /@fullhuman/postcss-purgecss@2.3.0:
     resolution: {integrity: sha512-qnKm5dIOyPGJ70kPZ5jiz0I9foVOic0j+cOzNDoo8KoCf6HjicIZ99UfO2OmE7vCYSKAAepEwJtNzpiiZAh9xw==}
@@ -366,6 +385,23 @@ packages:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: true
 
+  /@stripe/react-stripe-js@1.16.5(@stripe/stripe-js@1.52.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==}
+    peerDependencies:
+      '@stripe/stripe-js': ^1.44.1
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@stripe/stripe-js': 1.52.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@stripe/stripe-js@1.52.1:
+    resolution: {integrity: sha512-fza40OPSpGQlFxc5TZWiYC/6Lk89Sep1fLuv9ss33YS6lCAF8UZbfA1E6W+lwO4c7WRKZIZumHIEbPJfP/O9uw==}
+    dev: false
+
   /@swc/helpers@0.4.14:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
     dependencies:
@@ -433,6 +469,16 @@ packages:
     transitivePeerDependencies:
       - prop-types
       - react
+    dev: false
+
+  /@types/react-toastify@4.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-u7Ie/7LHBsPVz/iJxi/WlRDS7Gh9csCJACTDXx+pSLuZCm94xpkwzhM3jV1L5ZxP/in0Gp2tFbJ91VrSGr1gyQ==}
+    deprecated: This is a stub types definition. react-toastify provides its own type definitions, so you do not need this installed.
+    dependencies:
+      react-toastify: 9.1.2(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - react
+      - react-dom
     dev: false
 
   /@types/react@18.0.28:
@@ -1319,6 +1365,11 @@ packages:
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /collection-visit@1.0.0:
@@ -4219,6 +4270,17 @@ packages:
     dependencies:
       prop-types: 15.7.2
       react: 17.0.2
+    dev: false
+
+  /react-toastify@9.1.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PBfzXO5jMGEtdYR5jxrORlNZZe/EuOkwvwKijMatsZZm8IZwLj01YvobeJYNjFcA6uy6CVrx2fzL9GWbhWPTDA==}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      clsx: 1.2.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@17.0.2:

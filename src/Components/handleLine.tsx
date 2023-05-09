@@ -1,12 +1,18 @@
 import dynamic from 'next/dynamic';
 import React, { useEffect, useState } from 'react';
 
-const DynamicSteppedLineTo = dynamic(
+
+const SteppedLineTo = dynamic(
     () => import('react-lineto').then((mod) => mod.SteppedLineTo),
-    {
-        ssr: false,
-    }
+    { ssr: false }
 );
+
+const DynamicSteppedLineTo = dynamic(() => Promise.resolve(SteppedLineTo), {
+    ssr: true,
+});
+
+
+
 export default function HandleLine() {
     const [isClient, setIsClient] = useState(false);
 

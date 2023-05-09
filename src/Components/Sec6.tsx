@@ -18,7 +18,7 @@ export default function Sec6() {
                     viewport={{ once: true }}
                     className="col-span-1 row-span-1"
                 >
-                    <Image src={logo} alt="Midas Logo" width={200} />
+                    <Image src={logo} alt="Midas Logo" width={300} />
                 </motion.div>
                 <motion.div
                     initial={{ x: 10, opacity: 0 }}
@@ -92,8 +92,8 @@ export default function Sec6() {
             <div className="flex flex-col items-center">
                 <CallToAction />
                 <CTAButton lineclass="Q" />
-                <div className="R absolute right-10 h-24 w-2 bg-transparent"></div>
-                <div className="P absolute left-10 h-24 w-2 bg-transparent"></div>
+                <div className=" mt-8 R absolute right-10 h-24 w-2 bg-transparent"></div>
+                <div className=" mt-8 P absolute left-10 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );
