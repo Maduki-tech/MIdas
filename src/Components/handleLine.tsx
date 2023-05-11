@@ -25,6 +25,7 @@ export default function HandleLine() {
                 <DynamicSteppedLineTo
                     from="A"
                     to="B"
+                    delay={0.5}
                     borderStyle="dashed"
                     fromAnchor="left"
                     toAnchor="right"
@@ -50,7 +51,7 @@ export default function HandleLine() {
                     borderStyle="dashed"
                     fromAnchor="center"
                     toAnchor="center"
-                    orientation="v"
+                    orientation="h"
                     borderWidth={2}
                 />
             )}
@@ -61,6 +62,7 @@ export default function HandleLine() {
                     borderStyle="dashed"
                     fromAnchor="center"
                     toAnchor="left"
+                    orientation="v"
                     borderWidth={2}
                 />
             )}
@@ -69,8 +71,9 @@ export default function HandleLine() {
                     from="E"
                     to="F"
                     borderStyle="dashed"
+                    orientation="v"
                     fromAnchor="right"
-                    toAnchor="left"
+                    toAnchor="center left"
                     borderWidth={2}
                 />
             )}
@@ -79,8 +82,9 @@ export default function HandleLine() {
                     from="F"
                     to="H"
                     borderStyle="dashed"
-                    fromAnchor="left"
-                    toAnchor="right"
+                    orientation="h"
+                    fromAnchor="center left"
+                    toAnchor="left"
                     borderWidth={2}
                 />
             )}
@@ -89,6 +93,7 @@ export default function HandleLine() {
                     from="H"
                     to="G"
                     borderStyle="dashed"
+                    orientation="v"
                     fromAnchor="left"
                     toAnchor="right"
                     borderWidth={2}
@@ -99,9 +104,9 @@ export default function HandleLine() {
                     from="G"
                     to="I"
                     borderStyle="dashed"
+                    orientation="v"
                     fromAnchor="left"
-                    toAnchor="right"
-                    orientation="h"
+                    toAnchor="center right"
                     borderWidth={2}
                 />
             )}
@@ -110,7 +115,7 @@ export default function HandleLine() {
                     from="I"
                     to="L"
                     borderStyle="dashed"
-                    fromAnchor="left"
+                    fromAnchor="right"
                     toAnchor="right"
                     orientation="h"
                     borderWidth={2}
@@ -121,9 +126,9 @@ export default function HandleLine() {
                     from="L"
                     to="K"
                     borderStyle="dashed"
-                    fromAnchor="left"
+                    fromAnchor="right"
                     toAnchor="right"
-                    orientation="h"
+                    orientation="v"
                     borderWidth={2}
                 />
             )}
@@ -133,7 +138,7 @@ export default function HandleLine() {
                     to="J"
                     borderStyle="dashed"
                     fromAnchor="right"
-                    toAnchor="center"
+                    toAnchor="left"
                     orientation="v"
                     borderWidth={2}
                 />
@@ -143,8 +148,8 @@ export default function HandleLine() {
                     from="J"
                     to="M"
                     borderStyle="dashed"
-                    fromAnchor="right"
-                    toAnchor="center"
+                    fromAnchor="left"
+                    toAnchor="left"
                     orientation="h"
                     borderWidth={2}
                 />
@@ -154,8 +159,8 @@ export default function HandleLine() {
                     from="M"
                     to="N"
                     borderStyle="dashed"
-                    fromAnchor="right"
-                    toAnchor="center"
+                    fromAnchor="left"
+                    toAnchor="left"
                     orientation="v"
                     borderWidth={2}
                 />

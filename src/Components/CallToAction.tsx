@@ -6,7 +6,7 @@ type CallToActionProps = {
 };
 export function CallToAction() {
     return (
-        <div className="flex flex-col items-center px-8 text-center mb-8 xl:mb-0">
+        <div className="flex flex-col items-center px-8 text-center mb-8">
             <div>
                 Buche <span className="text-cText">Dein</span> Kostenloses
                 Beratungsgespräch
@@ -17,8 +17,8 @@ export function CallToAction() {
 
 export const CTAButton = ({ lineclass }: CallToActionProps) => {
     return (
-        <div className="relative inline-block w-fit mt-8">
-            <div className="pulse absolute inset-0 rounded-full bg-gradient-to-r from-cRed to-cBlue"></div>
+        <div className="relative inline-block w-fit ">
+            <div className="pulse absolute inset-0 rounded-full bg-white"></div>
             <button
                 className={`relative w-fit rounded-full px-5 py-3 bg-gradient-to-r from-cRed to-cBlue text-xl text-white ${lineclass} z-10`}
             >

@@ -53,12 +53,12 @@ function Kachel({ image, title, text }: KachelProps) {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
             className="flex flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow shadow-white hover:shadow-lg hover:shadow-white xl:w-1/3"
         >
-            <div className="m-4 h-44 w-44 ">
-                <Image src={image} alt="Logo" />
-            </div>
             <h1 className="text-center text-2xl font-bold text-cText">
                 {title}
             </h1>
+            <div className="m-4 h-44 w-44 ">
+                <Image src={image} alt="Logo" />
+            </div>
             <p className="text-center">{text}</p>
         </motion.div>
     );

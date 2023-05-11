@@ -25,7 +25,7 @@ export default function Sec2() {
                 dein Unternehmen aufmerksam machen und so auf offene Stellen
                 lenken.
             </div>
-            <div className="grid xl:grid-cols-3 gap-4 justify-items-center">
+            <div className="grid xl:grid-cols-3 justify-items-center">
                 <Kachel
                     icon={growth as HTMLImageElement}
                     title="Erhöhung der Reichweite"
@@ -70,10 +70,9 @@ function Kachel({ icon, title, text }: KachelProps) {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow shadow-white hover:shadow-lg hover:shadow-white"
+            className="flex w-3/4 flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow shadow-white hover:shadow-lg hover:shadow-white"
         >
             <Image src={icon} alt={title} width={150} className="" />
-            {/* <div className="h-12 w-12 bg-cBlue"></div> */}
             <h2 className="text-center text-xl font-bold">{title}</h2>
             <h4 className="my-4 text-center text-lg">{text}</h4>
         </motion.div>

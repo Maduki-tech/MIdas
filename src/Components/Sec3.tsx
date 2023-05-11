@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export default function Sec3() {
     return (
-        <div className="odd flex flex-col items-center gap-20">
+        <div className="odd mt-8 flex flex-col items-center gap-20">
             <h1 className=" text-center text-xl font-bold xl:text-3xl">
                 Kunden die uns <span className="text-cText">vertrauen : </span>
             </h1>
@@ -22,7 +22,7 @@ export default function Sec3() {
                 <Kachel image={mba as HTMLImageElement} delay={0.4} />
                 <Kachel image={nontel as HTMLImageElement} delay={0.5} />
                 <Kachel image={pappi as HTMLImageElement} delay={0.6} />
-                <Kachel image={scherer as HTMLImageElement} delay={0.7} />
+                <Kachel image={scherer as HTMLImageElement} delay={0.0} />
             </div>
             <div className="flex flex-col items-center">
                 <CallToAction />

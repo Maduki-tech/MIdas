@@ -27,7 +27,7 @@ export default function Sec6() {
                     viewport={{ once: true }}
                     className="col-span-1 row-span-1"
                 >
-                    <p className="mx-auto xl:w-3/4 2xl:w-1/2 px-8">
+                    <p className="mx-auto xl:w-3/4 px-8">
                         Du bist auf der Suche nach einem erfahrenen Partner für
                         Social Media und Online-Marketing? Dann bist du bei{' '}
                         <span className="text-cRed">Midas Media</span> genau
@@ -58,7 +58,7 @@ export default function Sec6() {
                     viewport={{ once: true }}
                     className="col-span-1 row-span-1"
                 >
-                    <p className="mx-auto xl:w-3/4 2xl:w-1/2 px-8">
+                    <p className="mx-auto xl:w-3/4 px-8">
                         Der Name Midas setzt sich aus den Vornamen der Gründer
                         Michael und Daniel zusammen. Midas ist also die
                         Social-Media-Agentur von Michael und Daniel. Der Name

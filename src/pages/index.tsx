@@ -1,4 +1,5 @@
 import { type NextPage } from 'next';
+import logo from '~/../public/Logo.png';
 import { motion, useScroll } from 'framer-motion';
 import Head from 'next/head';
 import Sec2 from '~/Components/Sec2';
@@ -14,22 +15,53 @@ import Sec1 from '~/Components/sec1';
 import Formular from '~/Components/Formular';
 import Footer from '~/Components/Footer';
 import { useEffect, useState } from 'react';
+import { CTAButton } from '~/Components/CallToAction';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
     const { scrollYProgress } = useScroll();
+    const [isScrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 150;
+            if (show !== isScrolled) setScrolled(show);
+        };
+
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', handleScroll);
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }
+    }, [isScrolled]);
 
     return (
         <div className="">
-            <motion.path
-                d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-                style={{ pathLength: scrollYProgress }}
-            />
             <Head>
                 <title>Midas Media</title>
                 <meta name="description" content="Midas Media Description" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <main className="">
+            <main className="relative">
+                <nav className={`fixed w-full ${isScrolled? 'top-0 z-50 flex justify-evenly items-center bg-cBlack/90 pb-4' : 'hidden'}`}>
+                    <div>
+                    <Link
+                        href="https://midasmedia.de/">
+                        <Image
+                            src={logo}
+                            alt="Midas Media Logo"
+                            width={80}
+                            className=" pt-4"
+                        />
+                    </Link>
+                    </div>
+                    <div className='text-xl' >Willst du endlich deinen gewünschten <span className='text-cText'>Mitarbeiter</span> finden?</div>
+                    <div>
+                        <CTAButton lineclass="" />
+                    </div>
+                </nav>
                 <Sec1 />
                 <Sec2 />
                 <Sec3 />
@@ -55,12 +87,15 @@ function ConditionalHandleLine() {
         setShouldRender(true);
     }, []);
 
-    if (typeof window === 'undefined' || !shouldRender || window.innerWidth <= 1024) {
+    if (
+        typeof window === 'undefined' ||
+        !shouldRender ||
+        window.innerWidth <= 1024
+    ) {
         return null;
     }
 
     return <HandleLine />;
 }
-
 
 export default Home;

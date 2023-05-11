@@ -103,7 +103,7 @@ function QaA({ question, answer }: QProps) {
 
 function CompactCard({ children, onExpand, disabled }: { children: React.ReactNode; onExpand: () => void; disabled?: boolean }) {
     return (
-        <motion.div className="w-[60vw] text-center border-2 border-cBlue xl:rounded-full rounded-lg shadow-md shadow-cBlue xl:p-2 p-4 hover:cursor-pointer hover:shadow-md hover:shadow-cRed hover:scale-105" onClick={disabled ? undefined : onExpand}>
+        <motion.div className="w-[50vw] text-center border bg-cBlack xl:rounded-lg rounded-sm xl:p-2 p-4 hover:cursor-pointer hover:shadow-md hover:border hover:border-white hover:scale-105 hover:transition-all" onClick={disabled ? undefined : onExpand}>
             {children}
         </motion.div>
     );

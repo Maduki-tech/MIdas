@@ -13,7 +13,7 @@ export default function Sec4() {
             </h2>
 
             <div className="grid xl:grid-cols-2 place-items-center">
-                <div className="xl:w-1/2 px-8">
+                <div className="xl:w-3/4 px-8">
                     Entdecke jetzt, wie wir mit unserer Strategie dein
                     Unternehmen auf das nächste Level bringen können. Melde dich
                     noch heute für ein kostenloses Beratungsgespräch an und

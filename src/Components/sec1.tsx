@@ -10,33 +10,42 @@ export default function Sec1() {
     return (
         <div className=" first flex flex-col items-center gap-4 pb-4 xl:h-screen">
             {/* TODO: Logo */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: 'easeOut' }}
-            >
-                <Image
-                    src={logo}
-                    alt="Midas Media Logo"
-                    width={150}
-                    className=" pt-4"
-                />
-            </motion.div>
+            <div className="flex items-center justify-evenly bg-cBlack/30 w-full py-4">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
+                >
+                    <Image
+                        src={logo}
+                        alt="Midas Media Logo"
+                        width={150}
+                        className=" pt-4"
+                    />
+                </motion.div>
 
-            <motion.h2
-                initial={{ opacity: 0 }}
-                transition={{ duration: 1, ease: 'easeOut' }}
-                animate={{ opacity: 1 }}
-                className="w-1/2 text-center text-xl font-bold xl:text-3xl"
-            >
-                Willst du endlich deinen gewünschten{' '}
-                <span className="text-cText">Mitarbeiter </span> finden?
-            </motion.h2>
+                <motion.h2
+                    initial={{ opacity: 0 }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
+                    animate={{ opacity: 1 }}
+                    className="w-1/2 text-center text-xl font-bold xl:text-3xl"
+                >
+                    Willst du endlich deinen gewünschten{' '}
+                    <span className="text-cText">Mitarbeiter </span> finden?
+                </motion.h2>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
+                >
+                    <CTAButton lineclass="" />
+                </motion.div>
+            </div>
             <motion.div
                 initial={{ opacity: 0 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
                 animate={{ opacity: 1 }}
-                className="my-2 border-t-2 border-dashed border-cRed "
+                className="my-2 "
             >
                 <h4 className="my-4 px-8 text-center xl:text-xl">
                     Finde noch heute mit{' '}
@@ -48,7 +57,6 @@ export default function Sec1() {
                     </Link>{' '}
                     gewünschten Mitarbeiter
                 </h4>
-                <div className="my-2 border-t-2 border-dashed border-cRed"></div>
             </motion.div>
 
             <motion.div
@@ -67,7 +75,7 @@ export default function Sec1() {
                     <div className="absolute left-0 top-0 h-full w-full bg-black opacity-20"></div>
                 </div>
 
-                <div className="relative row-span-2 h-fit rounded-xl  border-2 border-cBlue p-8 xl:w-full ">
+                <div className="relative row-span-2 h-fit rounded-xl  border-2 border-cBlue p-8 xl:w-full 2xl:w-3/4 ">
                     <div className="absolute inset-0 backdrop-blur-sm backdrop-filter"></div>
                     <div className="relative z-10 flex flex-col gap-4">
                         <div>
